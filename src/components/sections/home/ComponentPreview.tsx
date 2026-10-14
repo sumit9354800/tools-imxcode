@@ -9,6 +9,10 @@ import {
   CheckCircle2,
   AlertCircle,
   Type,
+  ShieldCheck,
+  BookOpen,
+  Download,
+  Server,
 } from "lucide-react";
 
 type FormTheme = {
@@ -299,6 +303,84 @@ export default function ComponentPreview() {
               ))}
             </div>
           </div>
+
+{/* Setup guide */}
+<div className="border-t border-white/10 p-4">
+  <div className="mb-4 flex items-center gap-2">
+    <BookOpen size={15} className="text-[#A7B34A]" />
+    <h4 className="text-xs font-semibold text-white/90">
+      Setup guide
+    </h4>
+  </div>
+
+  <ol className="space-y-4">
+    <li className="flex gap-3">
+      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-[#7C8615]/30 bg-[#7C8615]/10 text-[#A7B34A]">
+        <Palette size={13} />
+      </span>
+      <div>
+        <p className="text-xs font-medium text-white/85">
+          01. Customize
+        </p>
+        <p className="mt-1 text-[11px] leading-5 text-white/45">
+          Edit the heading, subtitle and colors. Check your changes in the live preview.
+        </p>
+      </div>
+    </li>
+
+    <li className="flex gap-3">
+      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/[0.03] text-white/65">
+        <Download size={13} />
+      </span>
+      <div>
+        <p className="text-xs font-medium text-white/85">
+          02. Get the code
+        </p>
+        <p className="mt-1 text-[11px] leading-5 text-white/45">
+          Download the component and setup documentation after purchase becomes available.
+        </p>
+      </div>
+    </li>
+
+    <li className="flex gap-3">
+      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/[0.03] text-white/65">
+        <Server size={13} />
+      </span>
+      <div>
+        <p className="text-xs font-medium text-white/85">
+          03. Connect your API
+        </p>
+        <p className="mt-1 text-[11px] leading-5 text-white/45">
+          Configure your backend endpoint, server-side validation and secure password handling.
+        </p>
+      </div>
+    </li>
+
+    <li className="flex gap-3">
+      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/[0.03] text-white/65">
+        <ShieldCheck size={13} />
+      </span>
+      <div>
+        <p className="text-xs font-medium text-white/85">
+          04. Test & deploy
+        </p>
+        <p className="mt-1 text-[11px] leading-5 text-white/45">
+          Verify login, errors and production configuration before release.
+        </p>
+      </div>
+    </li>
+  </ol>
+
+  <div className="mt-5 rounded-lg border border-[#7C8615]/20 bg-[#7C8615]/[0.06] p-3">
+    <p className="text-[11px] font-medium text-[#B1BD52]">
+      Beginner-friendly
+    </p>
+    <p className="mt-1 text-[10px] leading-5 text-white/45">
+      Follow the documentation step by step. This preview does not create accounts or authenticate users.
+    </p>
+  </div>
+</div>
+
         </aside>
 
         {/* RIGHT: Working interactive demo */}
