@@ -2,13 +2,13 @@
   "name": "imx-digital-tools",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
-  },
+ "scripts": {
+  "dev": "next dev",
+  "build": "next build --webpack",
+  "start": "next start",
+  "lint": "eslint .",
+  "typecheck": "tsc --noEmit"
+},
   "dependencies": {
     "lucide-react": "^0.468.0",
     "next": "^16.4.0",
